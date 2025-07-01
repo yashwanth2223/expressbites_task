@@ -1,0 +1,110 @@
+.subscriptions-page {
+  background: var(--neutral-bg, #f6f6f6);
+  min-height: 80vh;
+  padding: 2.5rem 2vw 3rem 2vw;
+  text-align: center;
+}
+
+.subscriptions-page h1 {
+  color: var(--brand-blue, #264653);
+  margin-bottom: 2.2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.plans-list {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 18px rgba(38, 70, 83, 0.10);
+  padding: 2rem 2.2rem 1.5rem 2.2rem;
+  min-width: 260px;
+  max-width: 320px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  border: 2.5px solid transparent;
+}
+.plan-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(38, 70, 83, 0.16);
+}
+
+.plan-card h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.plan-neo {
+  border-color: #FFD60A;
+}
+.plan-gold {
+  border-color: #FF7F11;
+}
+.plan-goldpro {
+  border-color: #264653;
+}
+.plan-price {
+  font-size: 1.3rem;
+  color: #FF7F11;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.plan-features {
+  margin: 0 0 0.7rem 0;
+  padding: 0 0 0 1.1rem;
+  color: #264653;
+  font-size: 1.01rem;
+}
+.plan-features li {
+  margin-bottom: 0.2rem;
+}
+.plan-offers {
+  background: #EAF6FB;
+  border-radius: 0.7rem;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+  color: #264653;
+}
+.plan-offers strong {
+  color: #FF7F11;
+}
+.plan-select-btn {
+  background: linear-gradient(90deg, #FF7F11 60%, #FFD60A 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  transition: background 0.2s, transform 0.2s;
+  align-self: flex-end;
+}
+.plan-select-btn:hover, .plan-select-btn:focus {
+  background: linear-gradient(90deg, #e85d04 60%, #ffd60a 100%);
+  transform: scale(1.06);
+}
+
+@media (max-width: 900px) {
+  .plans-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .plan-card {
+    min-width: 220px;
+    max-width: 98vw;
+  }
+} 

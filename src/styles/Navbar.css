@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #264653 70%, #FF7F11 100%);
+  padding: 0.85rem 5vw;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(38, 70, 83, 0.10);
+  border-radius: 0 0 1.5rem 1.5rem;
+  transition: box-shadow 0.3s, backdrop-filter 0.3s, transform 0.3s;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background-blend-mode: multiply;
+  background-clip: padding-box;
+  backdrop-filter: blur(6px) saturate(1.1);
+  opacity: 0.97;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 6px 32px rgba(38, 70, 83, 0.18);
+  transform: scale(1.01) translateY(-2px);
+  backdrop-filter: blur(10px) saturate(1.2);
+}
+
+.navbar-logo a {
+  color: #FFD60A;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  transition: transform 0.2s, color 0.2s;
+  text-shadow: 0 2px 8px rgba(38, 70, 83, 0.10);
+}
+
+.navbar-logo a:hover {
+  transform: scale(1.09) rotate(-2deg);
+  color: #FF7F11;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #fff;
+  font-size: 1.08rem;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.45rem 1.1rem;
+  border-radius: 1.5rem;
+  position: relative;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.navbar-links li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0.2rem;
+  width: 0;
+  height: 3px;
+  background: #FFD60A;
+  border-radius: 2px;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1), left 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.navbar-links li a:hover::after,
+.navbar-links li a.active::after {
+  width: 80%;
+  left: 10%;
+}
+
+.navbar-links li a:hover, .navbar-links li a.active {
+  background: rgba(255,255,255,0.18);
+  color: #FFD60A;
+  box-shadow: 0 2px 8px rgba(255, 214, 10, 0.10);
+  transform: scale(1.07);
+}
+
+.navbar-links li a.active {
+  font-weight: 700;
+  color: #FF7F11;
+  background: #264653;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.85rem 2vw;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  .navbar-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.7rem;
+  }
+} 

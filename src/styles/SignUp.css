@@ -1,0 +1,106 @@
+.signup-container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+}
+.signup-form {
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 72, 100, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  min-width: 340px;
+  max-width: 370px;
+  align-items: center;
+}
+.signup-form h2 {
+  margin-bottom: 0.5rem;
+  color: #4f46e5;
+  font-weight: 700;
+  text-align: center;
+}
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  background: #fff;
+  border: 1.5px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #3730a3;
+  cursor: pointer;
+  transition: border 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.06);
+  width: 100%;
+}
+.google-btn:hover {
+  border: 1.5px solid #6366f1;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.10);
+}
+.google-icon {
+  width: 22px;
+  height: 22px;
+}
+.divider {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  line-height: 0.1em;
+  margin: 1.1rem 0 1.1rem 0;
+}
+.divider span {
+  background: #fff;
+  padding: 0 1.2rem;
+  color: #a1a1aa;
+  font-size: 1rem;
+}
+.signup-form input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+  width: 100%;
+}
+.signup-form input:focus {
+  border: 1.5px solid #6366f1;
+}
+.password-field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.show-btn {
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-weight: 600;
+  margin-left: -2.5rem;
+  cursor: pointer;
+  font-size: 0.98rem;
+  padding: 0 0.5rem;
+}
+.signup-btn {
+  background: linear-gradient(90deg, #6366f1 0%, #4f46e5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.signup-btn:hover {
+  background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+} 

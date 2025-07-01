@@ -1,0 +1,13 @@
+.blog-page {
+  background: #fffbe6;
+  min-height: 60vh;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  margin: 2rem 8vw;
+  box-shadow: 0 2px 12px rgba(255, 152, 0, 0.08);
+  color: #388e3c;
+  text-align: center;
+}
+.blog-page h1 {
+  color: #ff9800;
+} 
